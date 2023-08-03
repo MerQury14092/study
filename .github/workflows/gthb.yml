@@ -21,3 +21,5 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn -B package --file pom.xml
+      - name: Run java application
+        run: java -jar ./target/gitflows-1.0-SNAPSHOT.jar
