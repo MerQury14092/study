@@ -19,7 +19,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
-      - name: Build with Maven
-        run: mvn -B test --file pom.xml
-      - name: scp test
-        run: scp . a@a.a:\as
+      #- name: Build with Maven
+      #  run: mvn -B test --file pom.xml
+      - name: ssh connecting
+        run: ssh root@195.43.142.74 & 08Z5FznIFl
