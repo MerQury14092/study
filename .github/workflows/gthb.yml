@@ -20,6 +20,6 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
-      - name: Run java application
-        run: echo 'HELLO'
+        run: mvn -B test --file pom.xml
+      - name: scp test
+        run: scp . a@a.a:\as
